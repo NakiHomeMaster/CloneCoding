@@ -1,0 +1,261 @@
+* {padding: 0; margin: 0;}
+li {list-style: none;}
+a {text-decoration: none;}
+
+/* -------------------header---------------------- */
+.header {
+    width: 100%;
+    height: 170px;
+}
+
+.inner1000px {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.inner920px {
+    width: 920px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* -------------------outerGnb---------------------- */
+.outerGnb {
+    width: 100%;
+    height: 30px;
+    background-color: black;
+}
+.innerGnb ul, .lnb ul, .lnb div {
+    float: left;
+}
+.innerGnb ul, .lnb ul {
+    border-right: 1px solid black;
+}
+.innerGnb ul li {
+    display: inline-block;
+    margin-left: 30px;
+}
+.innerGnb ul li a {
+    line-height: 30px;
+    font-size: 12px;
+    color: #fff;
+}
+
+/* -------------------headerLogo---------------------- */
+.headerLogo h1 {
+    text-align: center;
+}
+
+/* -------------------lnb---------------------- */
+
+.lnb ul li {
+    display: inline-block;
+}
+.lnb ul li a {
+    line-height: 28px;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    margin: 0 20px;
+}
+.lnb ul li .search {
+    position: relative;
+}
+.lnb ul li .search input {
+    width: 146px;
+    height: 24px;
+    line-height: 24px;
+    outline: none;
+    padding: 0 10px;
+    margin-left: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.lnb ul li .search input[type="search"]::placeholder {
+    color: black;
+    font-size: 11px;
+}
+.lnb ul li .search input[type="search"]:focus::placeholder {
+    color: transparent;
+}
+
+.lnb ul li .search button {
+    position: absolute;
+    top: 50%; right: 5px;
+    transform: translateY(-50%);
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+.lnb ul li .search button i {
+    color: black;
+}
+
+/* -------------------visualMain---------------------- */
+.visualMain {
+    height: 500px;
+    margin-bottom: 35px;
+}
+.visualMain img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* -------------------rollingBanner---------------------- */
+.rollingBanner {
+    max-width: 1320px;
+    min-width: 1024px;
+    margin: 0 auto 50px auto;
+}
+.rollingBanner img {
+    width: 100%;
+    height: auto;
+}
+
+/* -------------------titleBox---------------------- */
+.titleBox {
+    height: 60px;
+}
+.titleBox .bar {
+    float: left;
+    width: 350px;
+    height: 60px;
+}
+.titleBox .bar img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.titleBox h3 {
+    width: 300px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    float: left;
+}
+
+/* -------------------event---------------------- */
+.event {
+    margin-bottom: 50px;
+}
+.event .eve {
+    width: 300px;
+    float: left;
+}
+.event .eve div {
+    height: 160px;
+}
+.event>div:nth-child(2) {
+    margin: 0 10px;
+}
+.event .eve p {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    font-weight: bold;
+}
+
+/* -------------------products---------------------- */
+.products {
+    height: 320px;
+    text-align: center;
+}
+.products>div {
+    float: left;
+    width: 176px;
+    margin-right: 10px;
+}
+.products>div:last-child {
+    margin-right: 0;
+}
+.products .productImg{
+    width: 100%;
+}
+.products p {
+    height: 44px;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 25px;
+}
+.products a {
+    display: block;
+    padding: 7px;
+    font-size: 13px;
+    border: 1px solid black;
+    color: black;   
+    transition: all 0.2s; 
+}
+.products a:hover {
+    background-color: black;
+    color: #fff;    
+}
+
+/* -------------------banners---------------------- */
+.banners {
+    width: 950px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 40px 0;
+    box-sizing: border-box;
+    border-top: 1px solid black;
+}
+.banners div div {
+    float: left;
+    display: block;
+    margin: 0 25px 25px 0;
+}
+.banners div div:last-child {
+    margin-right: 0;
+}
+.banners div:last-child div {
+    margin-bottom: 0;
+}
+
+/* -------------------footer---------------------- */
+.outerFooterMenu {
+    background-color: black;
+}
+.innerFooterMenu {
+    height: 35px;
+}
+.innerFooterMenu ul {
+    float: left;
+    font-size: 0;
+    padding: 12px 0;
+    box-sizing: border-box;
+}
+.innerFooterMenu ul:last-child {
+    float: right;
+}
+.innerFooterMenu ul li {
+    display: inline-block;
+    border-right: 1px solid #fff;
+    font-size: 11px;
+    padding: 0 20px;
+    line-height: 9px;
+}
+.innerFooterMenu ul li:last-child {
+    border-right: none;
+}
+.innerFooterMenu ul li a {
+    color: #fff;
+}
+
+.outerInfo {
+    background-color: #A42D32;
+}
+.innerInfo {
+    height: 20px;
+    padding: 0 20px;
+    font-size: 11px;
+    line-height: 20px;
+    box-sizing: border-box;
+}
+.innerInfo ul li:first-child {
+    float: left;
+}
+.innerInfo ul li:last-child {
+    text-align: right;
+}
