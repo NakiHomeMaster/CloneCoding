@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hyfresh | 국,반찬,찌개</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/sub_page.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="gnb width1070px">
+            <ul>
+                <li><a href="#!">로그인</a></li>
+                <li><a href="#!">회원가입</a></li>
+                <li><a href="#!">멤버십몰</a></li>
+                <li><a href="#!">이벤트</a></li>
+                <li><a href="#!">장바구니<span>0</span></a></li>
+            </ul>
+        </div>
+        <!--gnb-->
+        <div class="headerMiddle width1070px">
+            <div class="delibery">
+                <img src="../img/car.jpg" alt="car">
+                <ul>
+                    <li>잇츠온 ONLY</li>
+                    <li>주문배송 가능지역</li>
+                </ul>
+            </div>
+            <a href="../index.html" class="logo">
+                <img src="../img/logo.jpg" alt="logo">
+            </a>
+            <div class="search">
+                <form name="searchForm" id="searchForm" method="post">
+                    <input type="search" name="searchValue" placeholder="밀키트를 검색해 보세요" required>
+                    <button><i class="xi-search"></i></button>
+                </form>
+            </div>
+        </div>
+        <!--headerMiddle-->
+        <nav class="outerLnb">
+            <div class="innerLnb width1070px">
+                <div class="allMenu">
+                    <input type="checkbox" id="hamBtn">
+                    <div class="lnb">
+                        <label for="hamBtn" class="openBtn"><i class="xi-bars"></i> 전체 카테고리</label>
+                        <label for="hamBtn" class="closeBtn"><i class="xi-bars"></i> 전체 카테고리</label>
+                    </div>
+                    <ul class="list">
+                        <li><a href="./sub_page.html">국, 반찬, 김치</a></li>
+                        <li><a href="#!">국, 탕</a></li>
+                        <li><a href="#!">종가집 김치</a></li>
+                        <li><a href="#!">반찬</a></li>
+                        <li><a href="#!">한성젓갈</a></li>
+                        <li><a href="#!">본죽</a></li>
+                    </ul>
+                </div>
+                <!--allMenu-->
+                <ul class="lnbMiddle">
+                    <li><a href="#!">신제품</a></li>
+                    <li><a href="#!">김장김치이벤트</a></li>
+                    <li><a href="#!">하이프레시GO</a></li>
+                    <li><a href="#!">11월 할인</a></li>
+                    <li><a href="#!">이벤트</a></li>
+                </ul>
+                <!--lnbMiddle-->
+                <ul class="lnbRight">
+                    <li><a href="#!">라이프</a></li>
+                    <li><a href="#!">내게맞는 제품찾기</a></li>
+                    <li><a href="#!">브랜드</a></li>
+                </ul>
+                <!--lnbRight-->
+            </div>
+        </nav>
+        <!--outerLnb-->
+    </header>
+    <!--header-->
+
+
+    <div class="path width1070px">
+        <a href="../index.html"><i class="xi-home"></i></a>
+        <i class="xi-angle-right"></i>
+        <div class="pathBox">
+            <input type="checkbox" id="pathBtn">
+            <div class="pathLabel">
+                <label for="pathBtn" class="downIcon">국&#183;반찬&#183;김치 <i class="xi-caret-down-min"></i></label>
+                <label for="pathBtn" class="upIcon">국&#183;반찬&#183;김치 <i class="xi-caret-up-min"></i></label>
+            </div>
+            <ul class="pathMenu">
+                <li><a href="./sub_page.html">국, 반찬, 김치</a></li>
+                <li><a href="#!">국, 탕</a></li>
+                <li><a href="#!">종가집 김치</a></li>
+                <li><a href="#!">반찬</a></li>
+                <li><a href="#!">한성젓갈</a></li>
+                <li><a href="#!">본죽</a></li>
+            </ul>
+        </div>
+        <i class="xi-angle-right"></i>
+        <div>
+            <input type="checkbox" id="pathBtn02">
+            <div class="pathLabel02">
+                <label for="pathBtn02" class="downIcon02">국&#183;반찬&#183;김치 <i class="xi-caret-down-min"></i></label>
+                <label for="pathBtn02" class="upIcon02">국&#183;반찬&#183;김치 <i class="xi-caret-up-min"></i></label>
+            </div>
+            <ul class="pathMenu02">
+                <li><a href="./sub_page.html">국, 반찬, 김치</a></li>
+                <li><a href="#!">국, 탕</a></li>
+                <li><a href="#!">종가집 김치</a></li>
+                <li><a href="#!">반찬</a></li>
+                <li><a href="#!">한성젓갈</a></li>
+                <li><a href="#!">본죽</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--path-->
+
+    <div class="pageTitle width1070px">
+        <p>국&#183;반찬&#183;김치</p>
+    </div>
+    <!--pageTitle-->
+
+    <div class="filter width1070px">
+        <ul>
+            <li><a href="#!">인기제품순</a></li>
+            <li><a href="#!">추천제품순</a></li>
+            <li><a href="#!">높은가격순</a></li>
+            <li><a href="#!">낮은가격순</a></li>
+        </ul>
+        <div class="filterFigure">
+            <input type="radio" id="filterImgBtn" name="filter" checked>
+            <input type="radio" id="filterListBtn" name="filter">
+            <div class="filterLabel">
+                <label for="filterImgBtn" class="imgViewOn"><img src="./img/arr_4b.jpg" alt="arr_4b"></label>
+                <label for="filterImgBtn" class="imgView"><img src="./img/arr_4g.jpg" alt="arr_4g"></label>
+                <label for="filterListBtn" class="listViewOn"><img src="./img/arr_3b.jpg" alt="arr_3b"></label>
+                <label for="filterListBtn" class="listView"><img src="./img/arr_3g.jpg" alt="arr_3g"></label>
+            </div>
+        </div>
+    </div>
+
+    <section class="products width1070px">
+        <div>
+            <div>
+                <a href="../detail_page/detail_page.html">
+                    <img src="./img/product_01.jpg" alt="product01">
+                </a>
+                <a href="../detail_page/detail_page.html">
+                    <ul>
+                        <li>매니저배송</li>
+                        <li>무료배송</li>
+                    </ul>
+                    <p>종가집 김장김치 7kg(앞다리살 400g 추가)</p>
+                    <del>62,100원</del><span>52,500<em>원</em></span>
+                </a>
+            </div>
+            <div>
+                <a href="#!">
+                    <img src="./img/product_02.jpg" alt="product02">
+                </a>
+                <a href="#!">
+                    <ul>
+                        <li>매니저배송</li>
+                        <li>무료배송</li>
+                    </ul>
+                    <p>한촌 정통 설렁탕</p>
+                    <span>4,600<em>원</em></span>
+                </a>
+            </div>
+            <div>
+                <a href="#!">
+                    <img src="./img/product_03.jpg" alt="product03">
+                </a>
+                <a href="#!">
+                    <ul>
+                        <li>매니저배송</li>
+                        <li>무료배송</li>
+                    </ul>
+                    <p>한촌 사골 도가니탕</p>
+                    <span>5,500<em>원</em></span>
+                </a>
+            </div>
+        </div>
+        <div>
+            <div>
+                <a href="#!">
+                    <img src="./img/product_04.jpg" alt="product04">
+                </a>
+                <a href="#!">
+                    <ul>
+                        <li>매니저배송</li>
+                        <li>무료배송</li>
+                    </ul>
+                    <p>한촌 양지고기 육개장</p>
+                    <span>4,900<em>원</em></span>
+                </a>
+            </div>
+            <div>
+                <a href="#!">
+                    <img src="./img/product_05.jpg" alt="product05">
+                </a>
+                <a href="#!">
+                    <ul>
+                        <li>매니저배송</li>
+                        <li>무료배송</li>
+                    </ul>
+                    <p>한촌 사골곰탕 육수</p>
+                    <span>2,200<em>원</em></span>
+                </a>
+            </div>
+            <div>
+                <a href="#!">
+                    <img src="./img/product_06.jpg" alt="product06">
+                </a>
+                <a href="#!">
+                    <ul>
+                        <li>매니저배송</li>
+                        <li>무료배송</li>
+                    </ul>
+                    <p>순창 우리쌀 고추장 500G</p>
+                    <span>5,600<em>원</em></span>
+                </a>
+            </div>
+        </div>
+        <div>
+            <div>
+                <a href="#!">
+                    <img src="./img/product_07.jpg" alt="product07">
+                </a>
+                <a href="#!">
+                    <ul>
+                        <li>매니저배송</li>
+                        <li>무료배송</li>
+                    </ul>
+                    <p>정성들여 끍인 잇츠온 묵은지 김치찌개</p>
+                    <span>4,700<em>원</em></span>
+                </a>
+            </div>
+            <div>
+                <a href="#!">
+                    <img src="./img/product_08.jpg" alt="product08">
+                </a>
+                <a href="#!">
+                    <ul>
+                        <li>매니저배송</li>
+                        <li>무료배송</li>
+                    </ul>
+                    <p>정성들여 끓인 잇츠온 소고기 강된장찌개</p>
+                    <span>4,200<em>원</em></span>
+                </a>
+            </div>
+            <div>
+                <a href="#!">
+                    <img src="./img/product_09.jpg" alt="product09">
+                </a>
+                <a href="#!">
+                    <ul>
+                        <li>매니저배송</li>
+                        <li>무료배송</li>
+                    </ul>
+                    <p>종가집 맛김치 1KG</p>
+                    <span>10,500<em>원</em></span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!--products-->
+
+    <div class="pagenation width1070px">
+        <a href="#!"><i class="xi-backward"></i></a>
+        <a href="#!"><i class="xi-play"></i></a>
+        <a href="#!">1</a>
+        <a href="#!"><i class="xi-play"></i></a>
+        <a href="#!"><i class="xi-forward"></i></a>
+    </div>
+    <!--pagenation-->
+
+    <div class="wingBanner">
+        <input type="checkbox" id="wing">
+        <aside class="wingBox">
+            <label for="wing" class="cart"><img src="../img/cart.png" alt="cart"></label>
+            <label for="wing" class="cartClose"><img src="../img/cart.png" alt="cart"></label>
+            <div class="wingitem">
+                <p>최근에 본 상품</p>
+                <a href="../detail_page/detail_page.html">
+                    <img src="../img/product01.jpg" alt="product01">
+                    <p>종가집 총각김치</p>
+                </a>
+            </div>
+        </aside>
+    </div>
+    <!--wingBanner-->
+
+    <footer class="footer">
+        <div class="outerFooterMenu">
+            <div class="footerMenu width1070px">
+                <ul>
+                    <li><a href="#!">회사소개</a></li>
+                    <li><a href="#!">CCM</a></li>
+                    <li><a href="#!">이용약관</a></li>
+                    <li><a href="#!">개인정보처리방침</a></li>
+                    <li><a href="#!">위치기반서비스 이용약관</a></li>
+                    <li><a href="#!">야쿠르트 채용</a></li>
+                    <li><a href="#!">Fresh매니저 모집</a></li>
+                </ul>
+                <div class="familySite">
+                    <input type="checkbox" id="familySiteBtn">
+                    <div class="familySiteLabel">
+                        <label for="familySiteBtn" class="open">
+                            Family Site<i class="xi-angle-up-min"></i>
+                        </label>
+                        <label for="familySiteBtn" class="close">
+                            Family Site<i class="xi-angle-down-min"></i>
+                        </label>
+                    </div>
+                    <ul class="familySiteSheet">
+                        <li><a href="#!">한국야쿠르트 프레딧</a></li>
+                        <li><a href="#!">hy팩토리+</a></li>
+                        <li><a href="#!">hy인재채용</a></li>
+                        <li><a href="#!">hyLabs</a></li>
+                        <li><a href="#!">Fredit 착한습관</a></li>
+                    </ul>
+                </div>
+                <!--familySite-->
+                <div class="siteMap">
+                    <input type="checkbox" id="siteMapBtn">
+                    <div class="siteMapLabel">
+                        <label for="siteMapBtn" class="open">
+                            메뉴 전체보기<i class="xi-angle-up-min"></i>
+                        </label>
+                        <label for="siteMapBtn" class="close">
+                            닫기<i class="xi-close"></i>
+                        </label>
+                    </div>
+                    <ul class="siteMapSheet">
+                        <li><a href="#!">all menu</a></li>
+                    </ul>
+                </div>
+                <!--siteMap-->
+            </div>
+            <!--innerFooterMenu-->
+        </div>
+        <!--outerFooterMenu-->
+        <div class="info">
+            <div class="infoTop width1070px">
+                <div class="logo">
+                    <img src="../img/logoFooter.png" alt="logoFooter">
+                </div>
+                <div class="infoDetail">
+                    <ul>
+                        <li>
+                            <em>상호명</em>
+                            <span>(주)한국야쿠르트</span>
+                        </li>
+                        <li>
+                            <em>대표이사</em>
+                            <span>김병진</span>
+                        </li>
+                        <li>
+                            <em>주소</em>
+                            <span>서울특별시 서초구 강남대로 577</span>
+                        </li>
+                        <li>
+                            <em>고객센터</em>
+                            <span>1577-3651</span>
+                        </li>
+                        <li>
+                            <em>이메일</em>
+                            <span>counsel@yakult.co.kr</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <em>사업자등록번호</em>
+                            <span>114-81-70065</span>
+                        </li>
+                        <li>
+                            <em>통신판매업신고번호</em>
+                            <span>제2004-서울서초-04175</span>
+                            <a href="#!">사업자정보확인<i class="xi-play"></i></a>
+                        </li>
+                        <li>
+                            <em>방문판매업신고번호</em>
+                            <span>제2010-서울서초-0140호</span>
+                        </li>
+                        <li>
+                            <em>부가통신사업신고</em>
+                            <span>02201</span>
+                        </li>
+                        <li>
+                            <em class="longtail">개인정보관리 및 청소년보호 책임자</em>
+                            <span>최동일</span>
+                        </li>
+                    </ul>
+                    <div>
+                        <em>소비자피해보상보험</em>
+                        <img src="../img/sgi_logo.JPG" alt="sgi_logo">
+                        <p>
+                            고객님은 안전거래를 위해 현금 등으로 결제 시
+                            저희 쇼핑몰에서 가입한 구매 안전 서비스를 이용하실 수 있습니다.
+                            <br />
+                            (보상대상:미배송, 반품/환불거부, 쇼핑몰 부도)
+                            <a href="#!">가입사실 확인<i class="xi-play"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--infoTop-->
+            <div class="infoBottom width1070px">
+                <div class="infoBottomLeft">
+                    <ul>
+                        <li>Copyright (c) 2017 KOREA YAKULT CO.,LTD</li>
+                        <li>All Rights Reserved.</li>
+                    </ul>
+                    <div>
+                        <img src="../img/ncsi_logo.JPG" alt="ncsi_logo">
+                        <ul>
+                            <li>국가고객만족도</li>
+                            <li>21년 연속 1위(우유/발효유)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="../img/ccm_logo.JPG" alt="ccm_logo">
+                        <ul>
+                            <li>소비자중심경영</li>
+                            <li>(CCM) 인증획득</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sns">
+                    <a href="#!"><i class="xi-facebook"></i></a>
+                    <a href="#!"><i class="xi-twitter"></i></a>
+                    <a href="#!"><i class="xi-youtube-play"></i></a>
+                    <a href="#!"><i class="xi-instagram"></i></a>
+                </div>
+            </div>
+            <!--infoBottom-->
+        </div>
+        <!--info-->
+    </footer>
+    <!--footer-->
+</body>
+
+</html>

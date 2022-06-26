@@ -1,0 +1,594 @@
+
+/* header, footer, 기타 공통요소는 commom.css */
+
+
+/* ---------------visulMain---------------- */
+/* 인디케이터 제어 */
+#slideView1, #slideView2, #slideView3, #slideView4 {display: none;}
+#slideView1:checked ~ .visualMainImgs {transform: translateX(0%);}
+#slideView2:checked ~ .visualMainImgs {transform: translateX(-100%);}
+#slideView3:checked ~ .visualMainImgs {transform: translateX(-200%);}
+#slideView4:checked ~ .visualMainImgs {transform: translateX(-300%);}
+
+/* 양옆화살표 제어 */
+#img1, #img2, #img3, #img4 {display: none;}
+#img1:checked ~ .visualMainImgs li {transform: translateX(0%);}
+#img2:checked ~ .visualMainImgs li {transform: translateX(-100%);}
+#img3:checked ~ .visualMainImgs li {transform: translateX(-200%);}
+#img4:checked ~ .visualMainImgs li {transform: translateX(-300%);}
+
+.visualMain {
+    position: relative;
+    min-width: 1200px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.labelHandles {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2px 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    z-index: 90;
+}
+.labelHandles label {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-right: 10px;
+    cursor: pointer;
+}
+.labelHandles label:last-child {
+    margin-right: 0;
+}
+.visualMainImgs {
+    max-width: 1900px;
+    margin: 0 auto;
+    /* overflow: hidden; */
+}
+.visualImgs {
+    white-space: nowrap;
+    font-size: 0;
+}
+.visualImgs li {
+    display: inline-block;
+    width: 100%;
+    transition: all .5s;
+    /* display: none; */
+    /* animation-name: visualFade;
+    animation-duration: 0.5s; */
+}
+/* @keyframes visualFade {
+    from {opacity: .4;}
+    to {opacity: 1;}
+} */
+
+.visualImgs li a {
+    display: block;
+    position: relative;
+}
+.visualImgs li a img {
+    width: 100%;
+}
+.visualImgs li label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: block;
+    width: 36px;
+    height: 36px;
+}
+.visualImgs li .arrowLeft {
+    left: 20%;
+    border-top: 4px solid #fff;
+    border-left: 4px solid #fff;
+    border-radius: 3px;
+    box-sizing: border-box;
+    transform: rotate(-45deg);
+}
+.visualImgs li .arrowRight {
+    right: 20%;
+    border-top: 4px solid #fff;
+    border-right: 4px solid #fff;
+    border-radius: 3px;
+    box-sizing: border-box;
+    transform: rotate(45deg);
+}
+
+/* ---------------products---------------- */
+.products {
+    height: 810px;
+    margin-bottom: 50px;
+}
+.products>div {
+    width: 1070px;
+    height: 376px;
+}
+.products>div div {
+    float: left;
+    width: 260px;
+    height: 376px;
+    border: 1px solid #eee;
+    box-sizing: border-box;
+    margin: 0 10px 10px 0;
+}
+.products>div div:last-child {
+    margin-right: 0;
+}
+.products>div div:hover {
+    border: 1px solid #666;
+}
+
+/* 호버 시 이미지 확대 */
+.products>div div a:first-child {
+    display: block;
+    width: 258px;
+    height: 260px;
+    overflow: hidden;
+}
+.products>div div img {
+    width: 101%;
+    transition: all 0.2s;
+}
+.products>div div a:hover img {
+    transform: scale(1.1);
+}
+
+.products>div:last-child div {
+    margin-bottom: 0;
+}
+.products>div div a:last-child {
+    display: block;
+    width: 258px;
+    height: 116px;
+    padding: 13px 10px;
+    box-sizing: border-box;
+}
+.products>div div em {
+    display: block;
+    width: 240px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 13px;
+    color: #666;
+}
+.products>div div p {
+    width: 240px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 17px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.products>div div del {
+    font-size: 11px;
+    color: #ccc;
+}
+.products>div div span {
+    font-size: 17px;
+    color: #00A5F0;
+}
+
+/* ---------------eventBanner---------------- */
+.eventBanner {
+    position: relative;
+    min-width: 1200px;
+    height: 200px;
+    margin-bottom: 70px;
+    overflow: hidden;
+}
+
+.eventBanner a:nth-child(1) {
+    position: absolute;
+    top: 0; left: 0;
+}
+.eventBanner a:nth-child(2) {
+    position: absolute;
+    top: 0; left: 0;
+    animation: rollingIn 7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rollingIn {
+    0% {opacity: 0;}
+    5% {opacity: 1;}
+    50% {opacity: 1;}
+    55% {opacity: 0;}
+    100% {opacity: 0;}
+}
+/* .eventBanner a:nth-child(1) {
+    width: 100%;
+    height: 200px;
+    animation: banner1 5s linear infinite;
+}
+.eventBanner a:nth-child(2) {
+    width: 100%;
+    height: 200px;
+    animation: banner2 5s linear infinite;
+} */
+
+
+
+/* ---------------new---------------- */
+.new {
+    height: 398px;
+    margin-bottom: 70px;
+    /* margin: 280px auto 70px auto; */
+}
+.new div div {
+    float: left;
+    width: 350px;
+    height: 350px;
+    text-indent: -9999px;
+    overflow: hidden;
+    margin-right: 10px;
+    transition: all 0.2s;
+}
+
+.new div div:nth-child(1) {
+    background: url(../img/new01.jpg) no-repeat center center/100%;
+}
+.new div div:nth-child(2) {
+    background: url(../img/new02.jpg) no-repeat center center/100%;
+}
+.new div div:nth-child(3) {
+    background: url(../img/new03.jpg) no-repeat center center/100%;
+    margin-right: 0;
+}
+.new div div:nth-child(1):hover {
+    background-image: url(../img/new01_on.jpg);
+}
+.new div div:nth-child(2):hover {
+    background-image: url(../img/new02_on.jpg);
+}
+.new div div:nth-child(3):hover {
+    background-image: url(../img/new03_on.jpg);
+}
+
+/* ---------------recipeBanner---------------- */
+/* 보통 이럴 때 최대 사이즈는 몇으로 하는 게 좋을까? */
+.outerRecipeBanner {
+    width: 100%;
+    /* min-width: 1900px; */
+    /* height: 470px; */
+    /* 위에 두개를 설정해두면 콘텐츠들이 가운데 기준으로 안 줄어듦. */
+    margin: 0 auto;
+    box-sizing: border-box;
+    background: url(../img/recipe_bg.jpg) no-repeat center center/100%;
+}
+.innerRecipeBanner {
+    padding-top: 50px;
+}
+.recipeTitle {
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.recipeTitle p:nth-child(1) {
+    font-size: 15px;
+    color: #666;
+}
+.recipeTitle p:nth-child(2) {
+    font-size: 31px;
+    font-weight: 300;
+    color: #333;
+}
+.recipeTitle i {
+    position: absolute;
+    top: 26px; right: 374px;
+    font-size: 40px;
+    color: #999;
+}
+
+.recipeItem {
+    float: left;
+    width: 530px;
+    height: 230px;
+    margin-right: 10px;
+}
+.recipeItem:last-child {
+    margin-right: 0;
+}
+.recipeItem .recipeImg, .recipeItem img {
+    float: left;
+}
+.recipeItem .recipeImg {
+    position: relative;
+    width: 345px;
+    height: 230px;
+    background: url(../img/recipe01_img.jpg);
+}
+.recipeItem:last-child .recipeImg {
+    background: url(../img/recipe02_img.jpg);
+}
+
+.recipeImg .onBox {
+    position: absolute;
+    top: 0; left: 0;
+    width: 345px;
+    height: 230px;
+    background-color: rgba(0, 0, 0, 0);
+    transition: all 0.2s;
+}
+.recipeImg:hover .onBox {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.recipeImg .onText {
+    text-align: center;
+    position: absolute;
+    top: 50%; left: 50%;
+    width: 315px;
+    transform: translate(-50%,-50%);
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+    opacity: 0;
+    transition: all 0.2s;
+}
+.recipeImg:hover .onText {
+    opacity: 1;
+}
+.recipeImg .onText a {
+    display: block;
+    width: 100px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 13px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 12px;
+    margin: 10px auto 0 auto;
+    transition: all 0.2s;
+}
+.recipeImg .onText a:hover {
+    color: #fff;
+    background-color: #00A5F0;
+    border: 1px solid #00A5F0;
+}
+
+/* ---------------snsHashtag---------------- */
+.outerSnsHashtag {
+    height: 500px;
+    background-color: #F1F2F3;
+    border-bottom: 1px solid #eee;
+}
+.innerSnsHashtag>p {
+    font-size: 31px;
+    font-style: oblique;
+    text-align: center;
+    margin: 40px 0;
+}
+
+/* 탭메뉴 */
+#all, #facebook, #twitter, #youtube, #instagram {
+    display: none;
+}
+
+#all:checked ~ .label .labAll {
+    color: #333;
+    border-bottom: 1px solid #333;
+}
+#facebook:checked ~ .label .labFacebook {
+    color: #333;
+    border-bottom: 1px solid #333;
+}
+#twitter:checked ~ .label .labTwitter {
+    color: #333;
+    border-bottom: 1px solid #333;
+}
+#youtube:checked ~ .label .labYoutube {
+    color: #333;
+    border-bottom: 1px solid #333;
+}
+#instagram:checked ~ .label .labInstagram {
+    color: #333;
+    border-bottom: 1px solid #333;
+}
+
+#all:checked ~ .sheet .sheetAll {
+    display: block;
+}
+#facebook:checked ~ .sheet .sheetFacebook {
+    display: block;
+}
+#twitter:checked ~ .sheet .sheetTwitter {
+    display: block;
+}
+#youtube:checked ~ .sheet .sheetYoutube {
+    display: block;
+}
+#instagram:checked ~ .sheet .sheetInstagram {
+    display: block;
+}
+
+/* 탭메뉴 디자인 */
+.label {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.label label {
+    display: inline-block;
+    width: 120px;
+    height: 34px;
+    border-bottom: 1px solid #999;
+    font-size: 15px;
+    color: #999;
+    margin-right: 10px;
+}
+.label label:last-child {
+    margin-right: 0;
+} 
+
+/* 시트 디자인 */
+.sheet {
+    width: 530px;
+    height: 210px;
+    margin: 0 auto;
+}
+.sheet>div {
+    display: none;
+}
+.sheet>div a{
+    float: left;
+    position: relative;
+    display: block;
+    width: 150px;
+    height: 250px;
+    margin-right: 40px;
+}
+.sheet>div a:last-child {
+    margin-right: 0;
+}
+.sheet .snsImg {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.sheet .snsImg img {
+    width: auto;
+    height: 150px;
+}
+.sheet .snsIcon {
+    position: absolute;
+    top: 0; right: 0;
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+.sheet .snsIcon img {
+    width: auto;
+    height: 40px;
+    border-radius: 50%;
+}
+.sheet p {
+    font-size: 13px;
+    color: #666;
+    text-align: center;
+}
+
+/* ---------------contents---------------- */
+.contents {
+    height: 230px;
+    padding: 50px 0;
+    box-sizing: border-box;
+}
+.contents>div {
+    float: left;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+.contents>div:nth-child(1) {
+    padding-left: 0;
+    width: 406px;
+    border-right: 1px solid #ccc;
+}
+.contents>div:nth-child(2) {
+    width: 308px;
+    border-right: 1px solid #ccc;
+}
+.contents>div:nth-child(3) {
+    width: 354px;
+    padding-right: 0;
+}
+.contents h4 {
+    font-size: 17px;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.cs ul li {
+    float: left;
+}
+.cs ul li em {
+    font-size: 31px;
+    font-style: oblique;
+    font-weight: 900;
+    color: #00A5F0;
+}
+.cs ul li:first-child {
+    padding-right: 40px;
+    margin-right: 40px;
+    border-right: 1px solid #ccc;
+}
+.cs ul li:first-child p {
+    font-size: 11px;
+    color: #666;
+}
+.cs ul li:first-child .marginMore {
+    margin-left: 20px;
+}
+.cs ul li:first-child span {
+    margin-left: 10px;
+}
+.cs ul li:last-child p {
+    position: relative;
+    font-size: 13px;
+    line-height: 17px;
+    font-weight: 700;
+    color: #666;
+}
+.cs ul li:last-child p:first-child {
+    margin-bottom: 10px;
+}
+.cs ul li:last-child i {
+    position: absolute;
+    top: 50%; right: -50px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    font-weight: 700;
+    color: #666;
+}
+
+.app div {
+    float: left;
+}
+.app .qr {
+    width: 76px;
+    height: 76px;
+    margin-right: 20px;
+}
+.app .platform {
+    width: 100px;
+    height: 76px;
+    /* overflow: hidden; */
+}
+.app .platform img {
+    width: 100%;
+    height: auto;
+}
+
+.notice h4 {
+    display: inline;
+    margin-right: 10px;
+}
+.notice>a {
+    display: inline-block;
+    width: 48px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 11px;
+    color: #999;
+    border: 1px solid #999;
+    text-align: center;
+}
+.notice ul {
+    margin-top: 10px;
+}
+.notice ul li a::before {
+    content: '\00b7';
+    margin-right: 5px;
+}
+.notice ul li a {
+    font-size: 13px;
+    color: #999;
+}

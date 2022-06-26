@@ -1,0 +1,166 @@
+/* header, path, footer, 기타 공통요소는 commom.css */
+
+
+/* ---------------pageTitle---------------- */
+.pageTitle p {
+    width: 144px;
+    height: 40px;
+    font-size: 13px;
+    line-height: 40px;
+    color: #FFF;
+    padding: 0 10px;
+    background-color: #00A5F0;
+}
+
+/* ---------------filter---------------- */
+#filterImgBtn, #filterListBtn {display: none;}
+
+#filterImgBtn:checked ~ .filterLabel .imgView {display: none;}
+#filterImgBtn:checked ~ .filterLabel .imgViewOn {display: block;}
+#filterImgBtn:checked ~ .filterLabel .listView {display: block;}
+#filterImgBtn:checked ~ .filterLabel .listViewOn {display: none;}
+
+#filterListBtn:checked ~ .filterLabel .imgView {display: block;}
+#filterListBtn:checked ~ .filterLabel .imgViewOn {display: none;}
+#filterListBtn:checked ~ .filterLabel .listView {display: none;}
+#filterListBtn:checked ~ .filterLabel .listViewOn {display: block;}
+
+.filter {
+    padding: 30px 0;
+}
+.filter ul {
+    float: left;
+    font-size: 0;
+}
+.filter ul li {
+    display: inline-block;
+    border-right: 1px solid #ccc;
+    font-size: 11px;
+    line-height: 9px;
+    padding: 0 9px 0 7px;
+
+}
+.filter ul li:last-child {
+    border-right: none;
+
+}
+.filter ul li a {
+    font-size: 15px;
+    color: #999;
+}
+
+.filterFigure {
+    position: relative;
+    float: right;
+}
+.filterFigure label {
+    float: left;
+    margin-left: 10px;
+}
+
+
+
+/* ---------------products---------------- */
+.products {
+    height: 1830px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ddd;
+}
+.products>div {
+    width: 1070px;
+    height: 586px;
+}
+.products>div div {
+    float: left;
+    width: 350px;
+    height: 586px;
+    border: 1px solid #eee;
+    box-sizing: border-box;
+    margin: 0 10px 10px 0;
+}
+.products>div div:last-child {
+    margin-right: 0;
+}
+
+/* 호버 시 이미지 확대 */
+.products>div div a:first-child {
+    display: block;
+    width: 348px;
+    height: 360px;
+    overflow: hidden;
+}
+.products>div div img {
+    width: 104%;
+    transition: all 0.2s;
+}
+.products>div div a:hover img {
+    transform: scale(1.1);
+}
+
+.products>div:last-child div {
+    margin-bottom: 0;
+}
+.products>div div a:last-child {
+    display: block;
+    width: 348px;
+    height: 226px;
+    padding: 13px 10px;
+    box-sizing: border-box;
+}
+.products>div div ul li {
+    display: inline-block;
+    border: 1px solid #999;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 3px 5px;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 14px;
+    color: #999;
+    margin-bottom: 13px;
+}
+.products>div div p {
+    width: 240px;
+    font-size: 17px;
+    color: #333;
+    margin-bottom: 6px;
+}
+.products>div div del {
+    font-size: 11px;
+    color: #ccc;
+}
+.products>div div span {
+    font-size: 21px;
+    font-weight: 500;
+    color: #00A5F0;
+}
+.products>div div span em {
+    font-size: 11px;
+}
+
+/* ---------------pagenation---------------- */
+.pagenation {
+    padding: 40px 0 50px 0;
+    text-align: center;
+}
+.pagenation a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    color: #666;
+    background-color: #eee;
+    border: 1px solid #999;
+}
+.pagenation a:nth-child(2) i {
+    transform: rotate(180deg);
+}
+.pagenation a:nth-child(3) {
+    color: #00A5F0;
+    background-color: #fff;
+    border: 1px solid #00A5F0;
+    margin: 0 5px;
+}
+
